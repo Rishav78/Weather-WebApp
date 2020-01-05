@@ -1,7 +1,5 @@
 const router = require('express').Router();
-const controllers = require('../controllers');
 
-
-router.use('/weather', controllers.weather.getWeatherInformation);
+router.use('/weather', require('./weatherRoute'));
 
 module.exports = router;
